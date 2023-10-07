@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #23252C;
+    animation: gradient 15s linear infinite, gradientAnimation 5s linear infinite;
+    background-size: 200% 200%;
+    background-image: linear-gradient(45deg, #ff00dd, #00ff22, #55008d, #ffee00);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+a{
+  all: unset;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bcard {
+    width: 31.7rem;
+    margin: 1rem;
+}
+
+/* Header Styles */
+
+.bcard__profile-img {
+    width: 31.7rem;
+    height: 31.7rem;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    object-position: top right;
+    display: block;
+
+}
+
+/* Body Styles */
+.bcard__body {
+    background-color: rgba(255, 255, 255, 0.5); /* Sadece arka plan opak */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3.5rem;
+    padding-right: 5rem;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite, gradientAnimation 5s linear infinite;
+    color: black; /* Metin rengi */
+}
+
+.bcard__heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
+    color: black;
+}
+
+
+.bcard__name {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.bcard__title {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.28rem;
+}
+
+.bcard__btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.bcard__btn {
+    min-width: 11.5rem;
+    height: 3.4rem;
+    cursor: pointer;
+}
+
+.bcard__btn-icon {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+.bcard__btn--codingcourse {
+    display: flex;
+    align-items: center; /* İçeriği yatayda ve dikeyde ortala */
+    color: white; /* Buton metin rengi */
+    margin: 10px;
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Köşe yuvarlama */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 20px 20px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    background-color: #ee4646; /* Buton arkaplan rengi */
+    border-radius: 18px; /* Köşe yuvarlama */
+
+  }
+  
+  .bcard__logo {
+    width: 30px; /* Logo genişliğini ayarlayın */
+    height: 30px; /* Logo yüksekliğini ayarlayın */
+    margin-right: 15px; /* Logo ile metin arasındaki boşluğu ayarla */
+  }
+  
+  .bcard__btn-text {
+    margin-left: auto; /* Metni sağa yasla, logoyu sola yaslar */
+  }
+
+.bcard__btn--codingcourse:hover {
+    background-color: #eeff00;
+}
+
+.bcard__btn--codingcourse:active {
+    background-color: #ff9190;
+}
+/* İkinci buton stilleri (.bcard__btn--email) */
+.bcard__btn--email {
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    padding: 10px 20px;
+    margin-right: 10px; /* Sağ kenar boşluğunu ayarla */
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+.bcard__btn--email:hover {
+    background-color: #00d9ff;
+}
+
+.bcard__btn--email:active {
+    background-color: #ffae00cc;
+}
+
+/* İlk buton stilleri (.bcard__btn--linkedin) */
+.bcard__btn--linkedin {
+    color: #000000;
+    box-shadow: 0px 1px 2px rgba(52, 152, 219, 0.05);
+    border-radius: 18px;
+    padding: 10px 20px;
+    margin-right: 10px; /* Sağ kenar boşluğunu ayarla */
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: auto;
+}
+
+.bcard__btn--linkedin:hover {
+    background-color: #00ff2a;
+}
+
+.bcard__btn--linkedin:active {
+    background-color: #00ffb3;
+}
+
+.bcard__text-wrapper {
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    color: black;
+}
+
+.bcard__text-wrapper *+* {
+    margin-top: 1em;
+}
+
+.bcard__heading {
+    color: #f5f5f5;
+    font-size: 1.6rem;
+}
+
+.bcard__text {
+    color: grey;
+    font-size: 1.08rem;
+}
+
+/* Footer Styles */
+
+.bcardfooter {
+    height: 6.5rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    animation: gradient 15s linear infinite, gradientAnimation 5s linear infinite;
+}
+
+.bcardfooter-icon:hover {
+    transform: scale(1.2);
+    /* İkonu büyütme animasyonu */
+    transition: transform 0.9s ease;
+    /* Animasyon süresi ve hız eğrisi */
+}
+
+.bcardfooter-icon {
+    font-size: 2.7rem;
+    padding: 0.2em;
+    background-color: #918E9B;
+    margin-right: 2.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #ff0000, #00ff0d, #490d70, #2dbdff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bcardfooter-icon svg:hover {
+    background-color: #ffffff;
+}
+
+.bcardfooter-icon svg:active {
+    background-color: #00d9ff;
+}
+
+.bcardfooter-icon svg {
+    font-size: 2.7rem;
+    padding: 0.2em;
+    background: linear-gradient(-45deg, #ff0000, #00ff0d, #490d70, #2dbdff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bcardfooter-icon:last-of-type {
+    margin-right: 0;
+    background: linear-gradient(-45deg, #ff0000, #00ff0d, #490d70, #2dbdff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+@media (max-height: 750px) {
+    .main {
+        /* do something.. */
+        height: auto;
+    }
+}
