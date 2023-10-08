@@ -211,7 +211,7 @@ a{
 }
 
 .bcard__text {
-    color: grey;
+    color: rgb(0, 0, 0);
     font-size: 1.08rem;
 }
 
